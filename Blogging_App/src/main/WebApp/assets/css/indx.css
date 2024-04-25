@@ -1,0 +1,77 @@
+/*--------------------  Navbar  --------------------*/
+ul li a .las{
+    font-size: 30px;
+}
+ul li a .lar{
+    font-size: 30px;
+}
+/*--------------------  Navbar  --------------------*/
+
+/*--------------------  user html file  --------------------*/
+ #userHtml .row{
+    margin-top: 10%;
+    margin-bottom: 5%;
+    border: 1px solid black;
+    border-radius: 20px;
+ }
+ #userHtml .form-control{
+    padding: 10px;
+    width: 200px;
+ }
+ #userHtml .form-group{
+    padding-bottom: 10px;
+ }
+ #userHtml .aboutMeClass{
+    display: flex;
+ }
+ #userHtml .aboutMeClass .las{
+    font-size: 25px;
+ }
+ #userHtml .aboutMeClass h2{
+    padding-right: 10px;
+ }
+/*--------------------  user html file  --------------------*/
+
+/*--------------------  create post html file  --------------------*/
+ #createPostHtml{
+   margin-top: 10%;
+   margin-bottom: 10%;
+   border: 1px solid black;
+   border-radius: 20px;
+ }
+
+ #createPostHtml h2{
+   text-align: center;
+}
+#createPostHtml .createBlog{
+   margin-top: 4px;
+   padding: 5px;
+   margin-left: 50px;
+}
+#createPostHtml .butts{
+   padding: 30px;
+   text-align: center;
+}
+#createPostHtml .btn{
+   padding-left: 150px;
+   padding-right: 150px;
+}
+#createPostHtml .createBlog .inputs label{
+   font-size: 20px;
+   font-weight: bold;
+   padding-right: 10px;
+}
+#createPostHtml .createBlog #input1 input{
+   margin-left: 50px;
+   padding-right: 128vh;
+   padding-top: 10px;
+}
+#createPostHtml .createBlog input{
+   border-radius: 20px;
+}
+#createPostHtml .createBlog textarea{
+   border-radius: 20px;
+   margin-top: 20px;
+}
+
+/*--------------------  create post html file  --------------------*/

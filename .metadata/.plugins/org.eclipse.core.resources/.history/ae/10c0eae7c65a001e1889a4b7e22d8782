@@ -1,0 +1,5 @@
+package org.blogg.Controller;
+
+public class AuthController {
+
+}

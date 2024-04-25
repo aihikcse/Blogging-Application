@@ -1,0 +1,24 @@
+package org.blogg.security;
+
+import org.blogg.Repository.UserRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.blogg.Exception.RecourseNotFoundException;
+import org.blogg.Model.User;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
+
+public class CustomerUserDetailService implements UserDetailsService{
+
+	@Autowired
+	private UserRepository userRepo;
+	
+	@Override
+	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+		//loading user from database by username
+		User user = this.userRepo.findByEmail(username).orElseThrow(()-> new RecourseNotFoundException(" User ", " email: "+username, 0));
+		return user;
+		
+	}
+
+}
